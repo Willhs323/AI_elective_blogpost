@@ -522,7 +522,7 @@ We then apply our normalization function. Note that we remove column 12 of NNdat
 
 We then add back mortality, as we don't want to normalize that one.
 
-```{r , echo=FALSE}
+```{r , echo=TRUE}
 NNdata_normalized <- as.data.frame(lapply(NNdata[,-12], normalize))
 NNdata_normalized$Mortality <- newvars$Mortality
 str(NNdata_normalized)
